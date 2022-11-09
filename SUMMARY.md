@@ -2,8 +2,10 @@
 
 ## 關於本書
 
-* [Page 5](README.md)
-* [Page 1](guan-yu-ben-shu/page-1.md)
+* [基本資料](README.md)
+* [問與答](guan-yu-ben-shu/news.md)
+* [評價](guan-yu-ben-shu/comment.md)
+* [勘誤表](guan-yu-ben-shu/errata.md)
 
 ## 上冊勘誤表 <a href="#errfix1" id="errfix1"></a>
 
