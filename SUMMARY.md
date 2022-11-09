@@ -12,3 +12,7 @@
 ## 下冊勘誤表 <a href="#errfix2" id="errfix2"></a>
 
 * [Page 4](errfix2/page-4.md)
+
+***
+
+* [netsnmp\_o4MIxRHA](netsnmp\_o4mixrha.md)
