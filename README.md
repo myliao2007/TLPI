@@ -8,7 +8,6 @@
 
 Facebook 專區：[https://www.facebook.com/TLPITW/](https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2FTLPITW%2F\&sa=D\&sntz=1\&usg=AOvVaw1GtUh-VVVFcI0B9Nv79NEX)
 
-\
 
 
-<figure><img src="https://lh6.googleusercontent.com/Xh-tQgb6YXZr_Hp6KPu7EtkK41SdFVgyiiq6oPbx3YcZaetpF-448UrAWnd9hFniC9nq-tdbkeYpGOTwbiDZCh7Crn-qGpjW678j-DThQShUwt-p=w1280" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/EmbeddedImage.png" alt=""><figcaption></figcaption></figure>
