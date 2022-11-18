@@ -14,4 +14,4 @@ All of the source code is copyright Michael Kerrisk, and each file is licensed u
 
 這裡介紹的 source code 會以這邊為主：
 
-[https://github.com/myliao2007/tpli-sample/tree/main/tlpi-dist](https://github.com/myliao2007/tpli-sample/tree/main/tlpi-dist)
+[https://github.com/myliao2007/tlpi-sample/](https://github.com/myliao2007/tlpi-sample/)
