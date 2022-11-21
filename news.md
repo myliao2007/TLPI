@@ -4,7 +4,7 @@ description: 問與答
 
 # 問與答
 
-問：這本書與 “The Linux Programming Interface: A Linux and Unix System Programming Handbook” 這本原文書版本相同嗎？是2010-09-21的版本嗎 ？
+問：這本書與 “The Linux Programming Interface: A Linux and Unix System Programming Handbook” 這本原文書版本相同嗎 ？是2010-09-21的版本嗎 ？
 
 答：目前為止（2016/10）這本原文書只有初版，因此中文版與原文版是相同的，而且中文版在送印刷前已經有遵循作者（[Michael Kerrisk](http://www.google.com/url?q=http%3A%2F%2Fman7.org%2F\&sa=D\&sntz=1\&usg=AOvVaw19S-WrykA1b3ZHuZYwKjIo)）的[勘誤表](http://www.google.com/url?q=http%3A%2F%2Fman7.org%2Ftlpi%2Ferrata%2Findex.html\&sa=D\&sntz=1\&usg=AOvVaw1eS-6qiKHnpJaSl9690c9W)將內容進行錯誤與更新等修訂。
 
