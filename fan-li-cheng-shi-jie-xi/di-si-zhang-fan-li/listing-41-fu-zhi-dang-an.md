@@ -1,10 +1,13 @@
 # Listing 4-1 複製檔案
 
-程式路徑：tlpi-dist/fileio/copy.c
+說明：這個程式的目的是示範複製檔案的功能，在程式設計層面可以學習到檔案的處理：
 
-[https://github.com/myliao2007/tlpi-sample/blob/main/tlpi-dist/fileio/copy.c](https://github.com/myliao2007/tlpi-sample/blob/main/tlpi-dist/fileio/copy.c)
+* 開啟檔案（並指定開啟檔案的權限模式）: open()
+* 讀取檔案: read()
+* 寫入檔案: write()
+* 關閉檔案: close()
 
-
+程式碼路徑：tlpi-dist/fileio/copy.c
 
 ```c
 /*************************************************************************\
@@ -70,4 +73,18 @@ main(int argc, char *argv[])
     exit(EXIT_SUCCESS);
 }
 ```
+
+編譯程式：
+
+```bash
+tlpi-dist/fileio$ gcc copy.c ../libtlpi.a -o copy -I ../lib
+```
+
+執行程式：
+
+```
+$ ./copy copy.c copy1.c
+```
+
+然後會看到成功複製了一個 copy1.c 的檔案。
 
