@@ -61,4 +61,3 @@ ar rs ../libtlpi.a *.o
 ar: creating ../libtlpi.a
 ```
 
-上面的最後一行，可以看到有產生 TLPI 的靜態函式庫 (libtlpi.a)。
