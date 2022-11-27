@@ -9,6 +9,7 @@
 
 程式碼路徑：tlpi-dist/fileio/copy.c
 
+{% code title="copy.c" lineNumbers="true" %}
 ```c
 /*************************************************************************\
 *                  Copyright (C) Michael Kerrisk, 2022.                   *
@@ -73,6 +74,7 @@ main(int argc, char *argv[])
     exit(EXIT_SUCCESS);
 }
 ```
+{% endcode %}
 
 編譯程式：
 
@@ -85,4 +87,3 @@ tlpi-dist/fileio$ gcc copy.c ../libtlpi.a -o copy -I ../lib
 ```
 $ ./copy copy.c copy1.c
 ```
-
