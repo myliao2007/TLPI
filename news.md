@@ -10,7 +10,7 @@ description: 問與答
 
 問：如果發現書中的錯誤，如何回報給你們？
 
-答：請將建議或問題發信到 TLPI@netdpi.net（或是透過臉書傳遞訊息：[https://www.facebook.com/TLPITW/](https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2FTLPITW%2F\&sa=D\&sntz=1\&usg=AOvVaw1GtUh-VVVFcI0B9Nv79NEX)），我們就可以收到您的回報，並提供在中文版的**勘誤表（**[**http://tlpi.netdpi.net/errata**](http://www.google.com/url?q=http%3A%2F%2Ftlpi.netdpi.net%2Ferrata\&sa=D\&sntz=1\&usg=AOvVaw2j4fTpzqRAXhmAvJrFv2TR)**），**謝謝。
+答：請將建議或問題發信到 TLPI@netdpi.net（或是透過臉書傳遞訊息：[https://www.facebook.com/TLPITW/](https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2FTLPITW%2F\&sa=D\&sntz=1\&usg=AOvVaw1GtUh-VVVFcI0B9Nv79NEX)），我們就可以收到您的回報，並提供在中文版的勘誤表（[http://tlpi.netdpi.net/errata](http://www.google.com/url?q=http%3A%2F%2Ftlpi.netdpi.net%2Ferrata\&sa=D\&sntz=1\&usg=AOvVaw2j4fTpzqRAXhmAvJrFv2TR)），謝謝。
 
 問：哪裡可以買到這本書？
 
