@@ -22,14 +22,14 @@
 
 /* Listing 4-1 */
 
-/* copy.c
-   Copy the file named argv[1] to a new file named in argv[2].
+/* copy.c 
+   將 argv[1] 指名的檔案複製到 argv[2] 指名的新檔案
 */
 #include <sys/stat.h>
 #include <fcntl.h>
 #include "tlpi_hdr.h"
 
-#ifndef BUF_SIZE        /* Allow "cc -D" to override definition */
+#ifndef BUF_SIZE        /* 在 cc 編譯時，可以用 "-D BUF_SIZE=512" 的方式來以 512 複蓋這裡的定義值 1024 */
 #define BUF_SIZE 1024
 #endif
 
@@ -44,7 +44,7 @@ main(int argc, char *argv[])
     if (argc != 3 || strcmp(argv[1], "--help") == 0)
         usageErr("%s old-file new-file\n", argv[0]);
 
-    /* Open input and output files */
+    /* 開啟檔案做為讀取輸入與寫入輸出 */
 
     inputFd = open(argv[1], O_RDONLY);
     if (inputFd == -1)
@@ -57,7 +57,7 @@ main(int argc, char *argv[])
     if (outputFd == -1)
         errExit("opening file %s", argv[2]);
 
-    /* Transfer data until we encounter end of input or an error */
+    /* 持續複製資料，直到遇到檔案結尾或是發生錯誤為止 */
 
     while ((numRead = read(inputFd, buf, BUF_SIZE)) > 0)
         if (write(outputFd, buf, numRead) != numRead)
