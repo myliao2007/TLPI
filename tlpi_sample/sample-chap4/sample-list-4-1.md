@@ -80,11 +80,9 @@ main(int argc, char *argv[])
 tlpi-dist/fileio$ gcc copy.c ../libtlpi.a -o copy -I ../lib
 ```
 
-執行程式：
+執行程式：測試複製檔案 copy.c 到 copy1.c。
 
 ```
 $ ./copy copy.c copy1.c
 ```
-
-然後會看到成功複製了一個 copy1.c 的檔案。
 
