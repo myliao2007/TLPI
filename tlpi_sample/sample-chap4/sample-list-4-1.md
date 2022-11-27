@@ -29,7 +29,7 @@
 #include <fcntl.h>
 #include "tlpi_hdr.h"
 
-#ifndef BUF_SIZE        /* 在 cc 編譯時，可以用 "-D BUF_SIZE=512" 的方式來以 512 複蓋這裡的定義值 1024 */
+#ifndef BUF_SIZE        /* 在 cc 編譯時，可以帶入編譯參數，例如：使用 "-D BUF_SIZE=512" 的方式來以 512 複蓋這裡的定義值 1024 */
 #define BUF_SIZE 1024
 #endif
 
