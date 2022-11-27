@@ -2,7 +2,6 @@
 
 如果你在編譯全部的範例程式時發生下面這個錯誤，請試著安裝 libpca-dev：
 
-{% code lineNumbers="true" %}
 ```bash
 aron@aaron-Virtual-Machine:/tmp/tlpi-sample/tlpi-dist/lib$ make
 cc -std=c99 -D_XOPEN_SOURCE=600 -D_DEFAULT_SOURCE -g -I../lib -pedantic -Wall -W -Wmissing-prototypes -Wno-sign-compare -Wimplicit-fallthrough -Wno-unused-parameter   -c -o cap_functions.o cap_functions.c
@@ -13,7 +12,6 @@ cap_functions.h:22:10: fatal error: sys/capability.h: No such file or directory
 compilation terminated.
 make: *** [<builtin>: cap_functions.o] Error 1
 ```
-{% endcode %}
 
 如果你使用的是 Ubuntu Linux 系統，可以直接使用 apt-get 安裝
 
@@ -23,7 +21,6 @@ $ sudo apt-get install libcap-dev
 
 然後編譯 TLPI 的 library，執行結果如下：
 
-{% code lineNumbers="true" %}
 ```bash
 $ cd tlpi-dist/lib
 $ make
@@ -63,6 +60,5 @@ rm -f ../libtlpi.a
 ar rs ../libtlpi.a *.o
 ar: creating ../libtlpi.a
 ```
-{% endcode %}
 
 上面的最後一行，可以看到有產生 TLPI 的靜態函式庫 (libtlpi.a)。
