@@ -1,4 +1,4 @@
-# Listing 4-1 複製檔案
+# 複製檔案
 
 說明：這個程式的目的是示範複製檔案的功能，在程式設計層面可以學習到檔案的處理：
 
@@ -9,7 +9,7 @@
 
 程式碼路徑：tlpi-dist/fileio/copy.c
 
-{% code title="copy.c" lineNumbers="true" %}
+{% code title="Listing 4-1: copy.c" lineNumbers="true" %}
 ```c
 /*************************************************************************\
 *                  Copyright (C) Michael Kerrisk, 2022.                   *
