@@ -9,6 +9,7 @@
 
 程式碼路徑：tlpi-dist/fileio/copy.c
 
+{% code title="copy.c" lineNumbers="true" %}
 ```c
 /*************************************************************************\
 *                  Copyright (C) Michael Kerrisk, 2022.                   *
@@ -73,6 +74,7 @@ main(int argc, char *argv[])
     exit(EXIT_SUCCESS);
 }
 ```
+{% endcode %}
 
 編譯程式：
 
@@ -84,5 +86,11 @@ tlpi-dist/fileio$ gcc copy.c ../libtlpi.a -o copy -I ../lib
 
 ```
 $ ./copy copy.c copy1.c
+```
+
+如果想在編譯時指定 BUF\_SIZE，可以用 -D 編譯參數定義 BUF\_SIZE 的數值：
+
+```bash
+tlpi-dist/fileio$ gcc copy.c ../libtlpi.a -o copy -I ../lib -DBUF_SIZE=2048
 ```
 
