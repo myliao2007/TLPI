@@ -1,6 +1,6 @@
 # 複製檔案
 
-說明：這個程式的目的是示範複製檔案的功能，在程式設計層面可以學習到檔案的處理：
+說明：這個程式的目的是示範複製檔案的功能，在程式設計層面可以學習到檔案的處理，基本的流程是開啟檔案、對檔案進行讀取或寫入的動作、最後不再存取檔案時則關閉檔案。
 
 * 開啟檔案（並指定開啟檔案的權限模式）: open()
 * 讀取檔案: read()
@@ -47,6 +47,7 @@ main(int argc, char *argv[])
 
     /* 開啟檔案做為讀取輸入與寫入輸出 */
 
+    /* 開啟要複製的檔案來源，以唯讀模式開啟 */
     inputFd = open(argv[1], O_RDONLY);
     if (inputFd == -1)
         errExit("opening file %s", argv[1]);
@@ -54,20 +55,23 @@ main(int argc, char *argv[])
     openFlags = O_CREAT | O_WRONLY | O_TRUNC;
     filePerms = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP |
                 S_IROTH | S_IWOTH;      /* rw-rw-rw- */
+
+    /* 開啟要複製的檔案目的，需要能夠寫入 */                
     outputFd = open(argv[2], openFlags, filePerms);
     if (outputFd == -1)
         errExit("opening file %s", argv[2]);
 
     /* 持續複製資料，直到遇到檔案結尾或是發生錯誤為止 */
-
     while ((numRead = read(inputFd, buf, BUF_SIZE)) > 0)
         if (write(outputFd, buf, numRead) != numRead)
             fatal("write() returned error or partial write occurred");
+            
     if (numRead == -1)
         errExit("read");
 
     if (close(inputFd) == -1)
         errExit("close input");
+        
     if (close(outputFd) == -1)
         errExit("close output");
 
