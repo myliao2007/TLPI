@@ -19,22 +19,6 @@ make: *** [<builtin>: cap_functions.o] Error 1
 $ sudo apt-get install libcap-dev
 ```
 
-如果你在編譯過程遇到下列這個錯誤：
-
-```bash
-acl_update.c:23:10: fatal error: sys/acl.h: No such file or directory
-   23 | #include <sys/acl.h>
-      |          ^~~~~~~~~~~
-compilation terminated.
-make[1]: *** [<builtin>: acl_update] Error 1
-make[1]: Leaving directory '/home/myliao/tlpi-sample/tlpi-dist/acl'
-myliao@debian:~/tlpi-sample/tlpi-dist$
-```
-
-
-
-
-
 
 
 然後編譯 TLPI 的 library，執行結果如下：
