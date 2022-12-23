@@ -19,8 +19,6 @@ make: *** [<builtin>: cap_functions.o] Error 1
 $ sudo apt-get install libcap-dev
 ```
 
-
-
 然後編譯 TLPI 的 library，執行結果如下：
 
 ```bash
