@@ -117,23 +117,23 @@ warning: "_XOPEN_SOURCE" redefined
 
 #### filesys/t\_mount.c
 
-When compiling the "book" version of this program, you may encounter errors staying that various MS\_\* constants are undeclared. This error will occur if the GNU C library on your system is earlier than version 2.12, because [older _glibc_ versions did not define some of the required constants](http://sources.redhat.com/bugzilla/show\_bug.cgi?id=11235). ([How do I find out what version of _glibc_ is on my system?](https://man7.org/tlpi/code/faq.html#glibc-version))
+編譯此程式的「book」版本時，若保留各種MS\_\*常數為未宣告，可能會發生錯誤。如果系統上的 GNU C 函式庫比2.12版舊時，就會發生此錯誤，[因為舊版的 glibc 並未定義某些必要的常數](http://sources.redhat.com/bugzilla/show\_bug.cgi?id=11235)。（[如何找出系統上有哪個版本的glibc？](https://man7.org/tlpi/code/faq.html#glibc-version)）
 
-The solution is either to compile the program on a system with a more recent version of _glibc_, or to compile the "distribution" version of the program.
+解決的方法是在使用較新的 glibc 版本的系統上編譯程式，或是編譯程式的「distribution」版本。
 
-The problem does not occur for the "distribution" version of this program, which includes code to conditionally define the required constants if they are not defined in the _glibc_ headers. See the [diff](https://man7.org/tlpi/code/online/diff/filesys/t\_mount.c.html) of the two program versions.
+此程式的「distribution」版本不會發生問題，此版本包含的程式碼，可依據條件定義所需的常數（如果未在 glibc 表頭中定義)。請參考兩個程式版本的[差異](https://man7.org/tlpi/code/online/diff/filesys/t\_mount.c.html)。
 
 #### pgsjc/catch\_SIGHUP.c
 
-For an explanation of the "\_XOPEN\_SOURCE" redefined warning that occurs when compiling the "book" version of this program, look [here](https://man7.org/tlpi/code/faq.html#\_XOPEN\_SOURCE-redefined).
+如需 "\_XOPEN\_SOURCE" 重新定義警告（編譯此程式的 "book" 版本時發生）的說明，請參閱[此處](https://man7.org/tlpi/code/faq.html#\_XOPEN\_SOURCE-redefined)。
 
 #### pgsjc/t\_setsid.c
 
-For an explanation of the "\_XOPEN\_SOURCE" redefined warning that occurs when compiling the "book" version of this program, look [here](https://man7.org/tlpi/code/faq.html#\_XOPEN\_SOURCE-redefined).
+如需 "\_XOPEN\_SOURCE" 重新定義警告（編譯此程式的 "book" 版本時發生）的說明，請參閱[此處](https://man7.org/tlpi/code/faq.html#\_XOPEN\_SOURCE-redefined)。
 
 #### proc/setjmp\_vars.c
 
-The variable 'rvar' might be clobbered by 'longjmp' or 'vfork' warning that occurs when compiling this program is expected. The GNU C compiler is diagnosing exactly the problem that this program demonstrates. See page 137 of the book.
+變數 'rvar' 可能會被 'longjmp' 或 'vfork' 警告所阻擋，在編譯此程式時可預期出現該警告。GNU C 編譯器正是在準確診斷這個程式所示範的問題。請見這本書第137頁。
 
 #### shlibs/dynload.c
 
