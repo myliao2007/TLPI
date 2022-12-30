@@ -137,13 +137,13 @@ warning: "_XOPEN_SOURCE" redefined
 
 #### shlibs/dynload.c
 
-If you encounter the error #pragma GCC diagnostic not allowed inside functions, it is because you are using an older version of the GNU C compiler that does not support the use of #pragma to suppress a compiler warning that would otherwise be generated for the program.
+如果您遇到函式內不允許的 #pragma GCC 診斷錯誤，這是因為您使用的是舊版的 GNU C 編譯器，它不支援使用 #pragma 語法，因而程式若使用了 #pragma，則會導致編譯器發出警告。
 
-If possible, upgrade to gcc 4.6 (Mar 2011) or later. Otherwise, edit the program to remove all of the lines beginning with #pragma and recompile (at which point you will see the previously suppressed warning message).
+如果可以，請升級至 gcc 4.6（2011年3月）或更新的版本。否則，請編輯程式，移除所有以 #pragma 開頭的那行程式碼並重新編譯（此時您會看到先前隱藏的警告訊息）。
 
 #### signals/nonatomic\_uint64.c.c
 
-If you encounter the error bits/wordsize.h: No such file or directory or sys/cdefs.h: No such file or directory, you are probably running a distribution (e.g., Ubuntu or Debian) that requires installation of the gcc-multilib package in order to build this program. Something like the following should work:
+如果發生錯誤 bits/wordsize.h：No such file or directory or sys/cdefs.h: No such file or directory。您執行 Linux 套裝版本 （例如Ubuntu或Debian）可能是需要安裝 gcc-multilib 套件，才能建置此程式的。類似下列的安裝動作應該能正常運作：
 
 <pre><code><strong>$ sudo apt-get install gcc-multilib
 </strong></code></pre>
