@@ -40,7 +40,7 @@ warning: "_XOPEN_SOURCE" redefined
 
 也可以參考 TLPI 書籍的 3.6.1 節。
 
-#### 問題二：error: sys/acl.h: No such file or directory
+### 問題二：error: sys/acl.h: No such file or directory
 
 如果您遇到錯誤 sys/acl.h: No such file or directory，那是因為您的系統上沒有安裝所需的 ACL套件。
 
@@ -51,7 +51,7 @@ warning: "_XOPEN_SOURCE" redefined
 
 在使用 RPM 安裝套件的系統上，你會需要安裝 libacl-devel 套件。
 
-#### 問題三：error: sys/capability.h: No such file or directory
+### 問題三：error: sys/capability.h: No such file or directory
 
 如果你看到錯誤訊息「error sys/capability.h: No such file or directory」
 
@@ -62,7 +62,7 @@ warning: "_XOPEN_SOURCE" redefined
 
 在使用 RPM 安裝套件的系統上，你會需要安裝 libcap-devel 套件。
 
-#### 問題四：error: selinux/selinux.h: No such file or directory
+### 問題四：error: selinux/selinux.h: No such file or directory
 
 如果你看到這個錯誤訊息「selinux/selinux.h: No such file or directory」，這是因為你的系統又有套件沒有安裝。在 Debian 或 Ubuntu 系統，你可以用下面的指令安裝看看，應該會有用：
 
