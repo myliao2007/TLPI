@@ -150,7 +150,7 @@ warning: "_XOPEN_SOURCE" redefined
 
 #### threads/thread\_multijoin.c
 
-When compiling on 64-bit systems, you'll see warnings about casts between pointers and integers of different sizes. I should have used the intptr\_r type in this program. However, I've opted not to make any changes to the code or the text for the reasons described at the end of the [erratum for page 649](https://man7.org/tlpi/errata/index.html#p\_649).
+在 64 位元的系統上編譯時，您會看到有關指標與不同大小的整數之間的型別轉換警告。我應該在這個程式中使用 intptr_r 型別。但是，由於[第 649 頁勘誤表](https://man7.org/tlpi/errata/index.html#p\_649)末尾所談的原因，我選擇不對程式碼或文字進行任何的更改。
 
 #### sockets/scm\_security\_send.c
 
