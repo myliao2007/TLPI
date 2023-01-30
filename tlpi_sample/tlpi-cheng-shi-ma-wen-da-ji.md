@@ -154,11 +154,11 @@ warning: "_XOPEN_SOURCE" redefined
 
 #### sockets/scm\_security\_send.c
 
-如果發生錯誤 selinux/selinux.h: No such file or directory, 請參考 [這裡](https://man7.org/tlpi/code/faq.html#selinux-selinux.h-missing).
+如果發生錯誤 selinux/selinux.h: No such file or directory, 請參考問題四。
 
 #### time/strtime.c
 
-在編譯此程式的書籍版本時，若出現警告重複定義 "\_XOPEN\_SOURCE", 請見 [這裡](https://man7.org/tlpi/code/faq.html#\_XOPEN\_SOURCE-redefined).
+在編譯此程式的書籍版本時，若出現警告重複定義 "\_XOPEN\_SOURCE", 請參考問題一。
 
 #### time/t\_stime.c
 
