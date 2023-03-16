@@ -176,7 +176,7 @@ The example source code is provided in two versions. The reasons for this are ex
 
 #### Where is the file lib/ename.c.inc?
 
-Some readers have noted that the file lib/ename.c.inc, shown in Listing 3-4 on page 58 of TLPI, is not present in the code tarball downloaded from the book website. That's because this file is automatically built via a script when invoking make(1) in the lib directory (or in the root directory of the source code). See lib/Makefile, which invokes Build\_ename.sh. Things are done this way because the set of error names can vary across kernel and glibc versions and across hardware architectures.
+哈囉！感謝您的詢問。有些讀者指出，在 TLPI 的第 58 頁上顯示的 lib/ename.c.inc 檔案在從書籍網站下載的程式碼 tarball 中並不存在。這是因為當在 lib 目錄（或原始碼的根目錄）中執行 make(1) 時，此檔案會透過腳本自動建立。請參閱 lib/Makefile，其中呼叫 Build\_ename.sh。之所以採用這種方式，是因為錯誤名稱集可以因核心和 glibc 版本以及硬體架構而異。
 
 #### What version of the Linux kernel do I have on my system?
 
